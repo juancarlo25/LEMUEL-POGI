@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width" , initial-scale="1.0" shrink-to-fit="no" />
+    <title>Laboratory 1</title>
+
+    <link href="~/Content/LAYOUT.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="~/img/logo.jpg" />
+            <ul>
+                <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                <li>@Html.ActionLink("CARS", "Cars", "Home")</li>
+                <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
+                <li>@Html.ActionLink("ABOUT US", "About", "Home")</li>
+
+            </ul>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    @RenderBody()
+
+
+
+</body>
+</html>

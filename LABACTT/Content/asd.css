@@ -1,0 +1,111 @@
+﻿
+
+.cars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+   
+    .product-card {
+        width: 400px;
+        min-height: 300px;
+        box-shadow: 0 0 14px rgba(0,0,0,0.25);
+        border-radius: 30px;
+        margin-left:5px;
+        padding: 25px;
+    }
+
+    .product-img-name, .product-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-img-name {
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        padding-right: 20px;
+    }
+
+    .product-card:nth-child(1) h1 {
+        color: #f86C00;
+    }
+    .product-card:nth-child(2) h1 {
+        color: #763E2E;
+    }
+    .product-card:nth-child(3) h1 {
+        color: #982C2A;
+    }
+
+    .details , .product-info {
+        flex-basis: 50%;
+    }
+
+    p{
+        margin-bottom: 25px;
+    }
+    .product-info p {
+        margin-bottom: 28px;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        box-shadow: 0 0 14px rgba(0,0,0,0.25);
+        border-radius: 12px;
+        padding-top: 9px;
+        text-align: center;
+        display: block;
+        width: 120px;
+        height: 35px;
+        position: relative;
+    }
+
+    a::before {
+        content:"";
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(85 ,85, 85);
+        z-index: -1;
+        border-radius: 12px;
+        transition: 0.4s;
+    }
+
+    .product-card:nth-child(1) a::before {
+        color: #F86C00;
+    }
+
+    .product-card:nth-child(2) a::before {
+        color: #763E2E;
+    }
+
+    .product-card:nth-child(3) a::before {
+         color: #982C2A;
+    }
+
+    a:hover::before {
+        width: 100%;
+    }
+
+    a:hover {
+        color: #fff;
+    }
